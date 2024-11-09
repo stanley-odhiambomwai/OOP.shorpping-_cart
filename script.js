@@ -44,3 +44,8 @@ class Product {
           console.log(`Product: ${item.product.name}, Price: $${item.product.price}, Quantity: ${item.quantity}, Total: $${item.getTotalPrice()}`);
         });
       }
+      
+      getTotalCartPrice() {
+        return this.items.reduce((total, item) => total + item.getTotalPrice(), 0);
+      }
+    }
