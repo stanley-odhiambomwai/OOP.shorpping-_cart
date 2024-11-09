@@ -59,3 +59,7 @@ const cart = new ShoppingCart();
 cart.addItem(product1, 1);
 cart.addItem(product2, 2);
 cart.addItem(product3, 3);
+
+
+console.log("Cart Items:");
+cart.displayCartItems();
