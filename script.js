@@ -22,3 +22,7 @@ class Product {
     constructor() {
       this.items = []; // Array of ShoppingCartItem instances
     }
+    
+    getTotalItems() {
+        return this.items.reduce((total, item) => total + item.quantity, 0);
+      }
