@@ -62,4 +62,7 @@ cart.addItem(product3, 3);
 
 
 console.log("Cart Items:");
-cart.displayCartItems();
+cart.displayCartItems();\
+
+console.log(`Total items in cart: ${cart.getTotalItems()}`);
+console.log(`Total cart price: $${cart.getTotalCartPrice()}`);
