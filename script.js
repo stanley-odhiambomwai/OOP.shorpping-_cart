@@ -53,3 +53,5 @@ class Product {
     const product1 = new Product(1, 'BMW', 120000);
 const product2 = new Product(2, 'Subaru', 160000);
 const product3 = new Product(3, 'Ferrari', 150000);
+
+const cart = new ShoppingCart();
