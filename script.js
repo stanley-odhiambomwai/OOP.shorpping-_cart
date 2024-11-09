@@ -17,3 +17,8 @@ class Product {
       return this.product.price * this.quantity;
     }
   }
+
+  class ShoppingCart {
+    constructor() {
+      this.items = []; // Array of ShoppingCartItem instances
+    }
