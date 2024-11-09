@@ -38,3 +38,9 @@ class Product {
           this.items.push(new ShoppingCartItem(product, quantity));
         }
       }
+
+      displayCartItems() {
+        this.items.forEach(item => {
+          console.log(`Product: ${item.product.name}, Price: $${item.product.price}, Quantity: ${item.quantity}, Total: $${item.getTotalPrice()}`);
+        });
+      }
