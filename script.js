@@ -20,9 +20,21 @@ class Product {
 
   class ShoppingCart {
     constructor() {
-      this.items = []; // Array of ShoppingCartItem instances
+      this.items = []; 
     }
-    
+
     getTotalItems() {
         return this.items.reduce((total, item) => total + item.quantity, 0);
+      }
+
+      addItem(product, quantity = 1) {
+        const existingItem = this.items.find(item => item.product.id === product.id);
+        
+        if (existingItem) {
+   
+          existingItem.quantity += quantity;
+        } else {
+        
+          this.items.push(new ShoppingCartItem(product, quantity));
+        }
       }
