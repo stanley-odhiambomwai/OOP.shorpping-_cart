@@ -44,8 +44,12 @@ class Product {
           console.log(`Product: ${item.product.name}, Price: $${item.product.price}, Quantity: ${item.quantity}, Total: $${item.getTotalPrice()}`);
         });
       }
-      
+
       getTotalCartPrice() {
         return this.items.reduce((total, item) => total + item.getTotalPrice(), 0);
       }
     }
+
+    const product1 = new Product(1, 'BMW', 120000);
+const product2 = new Product(2, 'Subaru', 160000);
+const product3 = new Product(3, 'Ferrari', 150000);
