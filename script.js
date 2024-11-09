@@ -55,3 +55,7 @@ const product2 = new Product(2, 'Subaru', 160000);
 const product3 = new Product(3, 'Ferrari', 150000);
 
 const cart = new ShoppingCart();
+
+cart.addItem(product1, 1);
+cart.addItem(product2, 2);
+cart.addItem(product3, 3);
